@@ -1,21 +1,39 @@
 aid: wise-transferwise
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wise-transferwise.png
 name: Wise (TransferWise)
-description: 'Wise (TransferWise) is a company surfaced as a portfolio company of sapphire-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Wise (formerly TransferWise) was surfaced as a portfolio company of sapphire-ventures,
+  but this stub is a DUPLICATE of the canonical in-network provider `wise` (all/wise, aid: wise).
+  The portfolio domain www.transferwise.com returns a 301 redirect to https://wise.com/ (probed
+  2026-07-21), which is the domain of the existing fully-enriched Wise repo. No artifacts are
+  maintained here; see the canonical repo for the Wise Platform API profile.'
 url: https://raw.githubusercontent.com/api-evangelist/wise-transferwise/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sapphire-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: duplicate-of-canonical
+x-duplicate-of: wise
+x-duplicate-evidence: 'https://www.transferwise.com/ -> 301 -> https://wise.com/ (curl HEAD, 2026-07-21);
+  all/wise apis.yml name "Wise", description "Wise (formerly TransferWise)", same Wise Platform API.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Duplicate
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +42,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.transferwise.com/
+  url: https://wise.com/
+- type: CanonicalProvider
+  url: https://raw.githubusercontent.com/api-evangelist/wise/refs/heads/main/apis.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
