@@ -27,7 +27,7 @@ x-tier-reason: duplicate-of-canonical
 x-duplicate-of: wise
 x-duplicate-evidence: 'https://www.transferwise.com/ -> 301 -> https://wise.com/ (curl HEAD, 2026-07-21);
   all/wise apis.yml name "Wise", description "Wise (formerly TransferWise)", same Wise Platform API.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
