@@ -40,7 +40,7 @@ x-duplicate-evidence: 'https://www.transferwise.com/ -> 301 -> https://wise.com/
   all/wise apis.yml name "Wise", description "Wise (formerly TransferWise)", same Wise Platform API.'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Fintech
@@ -52,6 +52,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://wise.com/us/blog/
+  type: Blog
 - type: Website
   url: https://wise.com/
 - type: CanonicalProvider
